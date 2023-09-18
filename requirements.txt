@@ -1,7 +1,6 @@
 geopandas==0.12.2
 streamlit==1.26.0
 pydeck==0.8.0
-GDAL==3.4.3
 Fiona==1.8.21
 geojson==3.0.0
 pyproj==3.4.1
