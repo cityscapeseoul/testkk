@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2414ed39d126a435dc129e5879f7d551 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2414ed39d126a435dc129e5879f7d551" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2414ed39d126a435dc129e5879f7d551 = L.map(
+                "map_2414ed39d126a435dc129e5879f7d551",
+                {
+                    center: [37.5430332, 127.0509169],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_31a309f446ddafa2a633cc10984bb51d = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2414ed39d126a435dc129e5879f7d551);
+        
+    
+            var feature_group_715bcb9bdd2735f737f31bdef044fa8a = L.featureGroup(
+                {}
+            ).addTo(map_2414ed39d126a435dc129e5879f7d551);
+        
+    
+            var circle_476dca180c53a5278e3a935663543da3 = L.circle(
+                [37.5032494, 127.04151],
+                {"bubblingMouseEvents": true, "color": "#5089cf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5089cf", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_476dca180c53a5278e3a935663543da3.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 크래프톤<br><b>기업명</b>&nbsp;&nbsp; 크래프톤<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 테헤란로 231 이스트타워 (역삼동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8fe7010563855997aeff0591a9db0b3a = L.circle(
+                [37.5461438, 126.875515],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_8fe7010563855997aeff0591a9db0b3a.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 넥스쳐<br><b>주소</b>&nbsp;&nbsp;  서울 양천구 목동중앙북로 112 1,2층 (목동) <br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b9b7e8513b7435df6006cb44da91bd77 = L.circle(
+                [37.3849988, 127.1233617],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_b9b7e8513b7435df6006cb44da91bd77.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 위메이드커넥트<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 황새울로360번길 42 분당스퀘어 16층 (서현동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ffcdce5cfb41f5eab4880f26a8e34dea = L.circle(
+                [37.500028, 127.0365071],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_ffcdce5cfb41f5eab4880f26a8e34dea.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 더블유게임즈<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 테헤란로 152 강남파이낸스센터 16층 (역삼동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_fbcdcffed882c161cac47bb0d59b8884 = L.circle(
+                [37.5101878, 127.0426542],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_fbcdcffed882c161cac47bb0d59b8884.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 테이크원컴퍼니<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 봉은사로 327 궁도빌딩 5층 (논현동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6ceb75de17d0383d7564f242cb2e9362 = L.circle(
+                [37.5260514, 126.9673304],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_6ceb75de17d0383d7564f242cb2e9362.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 샌드박스네트워크<br><b>주소</b>&nbsp;&nbsp; 서울 용산구 서빙고로 17 28~30층 (한강로3가)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0f5acfddef2db5ebb3801937168bb1d5 = L.circle(
+                [37.495093, 127.1224271],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_0f5acfddef2db5ebb3801937168bb1d5.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 엔드림<br><b>주소</b>&nbsp;&nbsp; 서울 송파구 중대로 135 IT벤처타워 서관 16층 (가락동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f876945252f6f43114d7256b4bed6299 = L.circle(
+                [37.386851, 127.1240403],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_f876945252f6f43114d7256b4bed6299.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 세컨드다이브<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 황새울로 354 8층 (서현동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_866262c2ca036062aa857323fc68a297 = L.circle(
+                [37.3381316, 127.1014491],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_866262c2ca036062aa857323fc68a297.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 나인아크<br><b>주소</b>&nbsp;&nbsp; 경기 용인시 수지구 신수로 767 A동 1501호 (동천동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a9f0b8a4174894c33c3767e73f29ca0e = L.circle(
+                [37.5847339, 126.8858607],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_a9f0b8a4174894c33c3767e73f29ca0e.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 무브인터렉티브<br><b>주소</b>&nbsp;&nbsp; 서울 마포구 성암로 330 DMC첨단산업센터 A동 601호 (상암동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5aeea39819b3acee20cea02a3fb8ec9f = L.circle(
+                [37.4979205, 127.0300088],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_5aeea39819b3acee20cea02a3fb8ec9f.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 하운드13<br><b>주소</b>&nbsp;&nbsp;  서울 강남구 테헤란로4길 5 해암빌딩 7,8층 (역삼동) <br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1a94d5d8c79f82af4e8fbc8dbbcc30c6 = L.circle(
+                [37.400409, 127.1031908],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_1a94d5d8c79f82af4e8fbc8dbbcc30c6.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 플레이위드<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 판교로256번길 25 판교테크노밸리 C3-7 C동 9층 (삼평동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_fcb9695124bf4aec032cb1655e5fb935 = L.circle(
+                [37.5794825, 126.8898561],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_fcb9695124bf4aec032cb1655e5fb935.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 그라비티네오싸이언<br><b>주소</b>&nbsp;&nbsp; 서울 마포구 월드컵북로 396 누리꿈스퀘어 R&D 타워 12층 (상암동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a153e637c687e5b044da4842510fec3a = L.circle(
+                [37.5239912, 127.0425797],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_a153e637c687e5b044da4842510fec3a.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 아이톡시<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 도산대로 427 파모소빌딩 5층 (청담동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4a54b459244447d445a81e117b3569a0 = L.circle(
+                [35.8348612, 128.6808423],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_4a54b459244447d445a81e117b3569a0.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 엔젤게임즈<br><b>주소</b>&nbsp;&nbsp; 대구 수성구 알파시티1로35길 1 엔젤게임즈 사옥 (대흥동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_13e625492472c9697650e0458e0f9a10 = L.circle(
+                [37.5394849, 127.0829024],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_13e625492472c9697650e0458e0f9a10.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 엔젤게임즈<br><b>주소</b>&nbsp;&nbsp; 서울 광진구 자양로 131 (자양동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e2b196a0d633a0901150a0613feab0e2 = L.circle(
+                [37.475427, 126.8817987],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_e2b196a0d633a0901150a0613feab0e2.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 밸로프<br><b>주소</b>&nbsp;&nbsp; 서울 금천구 디지털로 130 남성프라자 601~603호 (가산동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9a21e83d14e2dabce93375705fd10753 = L.circle(
+                [37.5061784, 127.0493786],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_9a21e83d14e2dabce93375705fd10753.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 챌린저스게임즈<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 선릉로94길 11 (삼성동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3b4d5a42d1f9fc0940e6358bac07b15f = L.circle(
+                [37.5082155, 127.0641472],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_3b4d5a42d1f9fc0940e6358bac07b15f.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 하이브로<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 영동대로 432 4층 (대치동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a7d75923d87a4632f1d2225907dc05ab = L.circle(
+                [37.4751186, 127.0448541],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_a7d75923d87a4632f1d2225907dc05ab.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 캐킷<br><b>주소</b>&nbsp;&nbsp;  서울 서초구 마방로10길 54-7 3,4층 (양재동) <br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d64acd5c756dfef460cbf7d632186122 = L.circle(
+                [37.4004728, 127.1068495],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_d64acd5c756dfef460cbf7d632186122.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 쿡앱스<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 대왕판교로 660 유스페이스 B동 8층 801호 (삼평동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_72ad5e30c38f42f3118cbf491f199ee9 = L.circle(
+                [37.3830295, 127.1214876],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_72ad5e30c38f42f3118cbf491f199ee9.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 조이시티<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 분당로 55 10층 (서현동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_871b4d7f0ba8285e42c0fdbb52b4c36c = L.circle(
+                [37.3849988, 127.1233617],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_871b4d7f0ba8285e42c0fdbb52b4c36c.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 위메이드플레이<br><b>주소</b>&nbsp;&nbsp;  경기 성남시 분당구 황새울로360번길 42 9, 14층 (서현동) <br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_23dfb3fd535633d3aa7b45b41728d120 = L.circle(
+                [37.6218272, 127.0250934],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_23dfb3fd535633d3aa7b45b41728d120.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 그래비티코리아<br><b>주소</b>&nbsp;&nbsp; 서울 강북구 도봉로37길 43-2 (미아동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_500d223c2e23a96058013243418b17e8 = L.circle(
+                [37.3954664, 127.1121154],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_500d223c2e23a96058013243418b17e8.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 라이온하트스튜디오<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 분당내곡로 131 판교테크원타워 14층 (백현동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b8e83280322a5a38c34c939fee23769a = L.circle(
+                [37.5014747, 127.040447],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_b8e83280322a5a38c34c939fee23769a.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 스페이스다이브게임즈<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 테헤란로 218 (역삼동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b3bb78af36be673da0c4fd9a084c974a = L.circle(
+                [37.3942583, 127.112028],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_b3bb78af36be673da0c4fd9a084c974a.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 라인플레이<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 분당내곡로 117 그레이츠판교 6층 (백현동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_826d969a598d6061a114e80531babc6b = L.circle(
+                [37.5047878, 127.0512511],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_826d969a598d6061a114e80531babc6b.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 니트로스튜디오<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 테헤란로 412 6층 (대치동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2b2b4443e981bfe27259afc6aaf7e769 = L.circle(
+                [37.481048, 126.8864071],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_2b2b4443e981bfe27259afc6aaf7e769.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 세가퍼블리싱코리아<br><b>주소</b>&nbsp;&nbsp; 서울 금천구 디지털로9길 68 대륭포스트타워5차 1801호 (가산동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_222d2db0acd765a14e17a9bc8677a8fa = L.circle(
+                [37.3849988, 127.1233617],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_222d2db0acd765a14e17a9bc8677a8fa.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 라인플러스<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 황새울로360번길 42 (서현동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0f1c91ae99b1a35c02159869aab714a3 = L.circle(
+                [37.3803438, 127.115365],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_0f1c91ae99b1a35c02159869aab714a3.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 넵튠<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 황새울로 246 도담빌딩 9층 (수내동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_add5c91be87238963e4d0383a9472de1 = L.circle(
+                [37.5595519, 126.9965792],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_add5c91be87238963e4d0383a9472de1.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 액토즈소프트<br><b>주소</b>&nbsp;&nbsp; 서울 중구 서애로 33 티엔에스빌딩 1~5층 (필동3가)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8fb36d844da7e4bde7bc1b521db13218 = L.circle(
+                [37.4995454, 126.890136],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_8fb36d844da7e4bde7bc1b521db13218.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 잼팟<br><b>주소</b>&nbsp;&nbsp; 서울 구로구 가마산로27길 66 아스타빌 1층 (구로동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_153be7ea9c3e86419d1b94df59f364c3 = L.circle(
+                [37.4798432, 126.8953231],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_153be7ea9c3e86419d1b94df59f364c3.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 구로발게임즈<br><b>주소</b>&nbsp;&nbsp; 서울 구로구 디지털로26길 38 지타워 (구로동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_81763d97bba71ca79f07c92fd7a9240f = L.circle(
+                [37.5595519, 126.9965792],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_81763d97bba71ca79f07c92fd7a9240f.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 아이덴티티게임즈<br><b>주소</b>&nbsp;&nbsp;  서울 중구 서애로 33 티엔에스빌딩 2,3층 (필동3가) <br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e438c60dfe8c45b8b1d5bab2674e9937 = L.circle(
+                [37.5160539, 126.8999251],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_e438c60dfe8c45b8b1d5bab2674e9937.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; IGS 본사<br><b>주소</b>&nbsp;&nbsp;  서울 영등포구 문래로28길 25 세미콜론 문래 N타워 7,8층 (문래동3가) <br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0ca38ed706d60d22a4961047bdc8a356 = L.circle(
+                [37.5076728, 127.0627515],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_0ca38ed706d60d22a4961047bdc8a356.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 데브캣<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 테헤란로98길 11 14층 (대치동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_83f1dcd36c849d050d99e5579b503337 = L.circle(
+                [37.5014747, 127.040447],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_83f1dcd36c849d050d99e5579b503337.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 스튜디오발키리<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 테헤란로 218 3층 (역삼동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_657e83eea18cb07e705bd51cbbc7b7cf = L.circle(
+                [37.5491454, 126.9112084],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_657e83eea18cb07e705bd51cbbc7b7cf.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 플레이하드<br><b>주소</b>&nbsp;&nbsp; 서울 마포구 양화로 19 합정오피스빌딩 홀트아동복지회 2층 (합정동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_27f591cd7cd47c66c31e421143ff7de3 = L.circle(
+                [37.5068355, 127.0662456],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_27f591cd7cd47c66c31e421143ff7de3.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 하이브IM<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 테헤란로108길 42 2층 (대치동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ee0be7173d2da49c6f44898aab541d25 = L.circle(
+                [37.4120521, 127.0927272],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_ee0be7173d2da49c6f44898aab541d25.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 메타보라<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 수정구 창업로40번길 30 판교IT센터 2층 (시흥동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_15f642a2b7e5d13d6d7f6f891ed5bc0c = L.circle(
+                [37.4798432, 126.8953231],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_15f642a2b7e5d13d6d7f6f891ed5bc0c.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 넷마블몬스터<br><b>주소</b>&nbsp;&nbsp; 서울 구로구 디지털로26길 38 (구로동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_19908317b28664791abbf0ae18e3bdec = L.circle(
+                [37.4798432, 126.8953231],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_19908317b28664791abbf0ae18e3bdec.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 넷마블넥서스<br><b>주소</b>&nbsp;&nbsp; 서울 구로구 디지털로26길 38 지밸리비즈플라자 (구로동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0fe1328fda6ef7f19eceb6f3d2d505ed = L.circle(
+                [37.5077659, 127.0451169],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_0fe1328fda6ef7f19eceb6f3d2d505ed.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 빅게임스튜디오<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 선릉로 551 새롬빌딩 지하1층 (역삼동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3260f2013a89a6361f705eccffb8504f = L.circle(
+                [37.4902033, 127.0056607],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_3260f2013a89a6361f705eccffb8504f.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; GC녹십자아이메드 강남센터<br><b>주소</b>&nbsp;&nbsp;  서울 서초구 서초대로38길 12 마제스타시티타워1 4,5층 (서초동) <br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4183cc608d96fb720be46337b2597229 = L.circle(
+                [37.3942583, 127.112028],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_4183cc608d96fb720be46337b2597229.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 그레이츠 판교<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 분당내곡로 117 (백현동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ea0bcc3402c7e8a1b3b47f1d2919f4c3 = L.circle(
+                [37.3867276, 127.1219752],
+                {"bubblingMouseEvents": true, "color": "#5089cf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5089cf", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_ea0bcc3402c7e8a1b3b47f1d2919f4c3.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 크래프톤<br><b>기업명</b>&nbsp;&nbsp; 드림모션<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 황새울로335번길 10 401호 (서현동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6033605de370310d50b17c83202b5490 = L.circle(
+                [37.5072048, 127.0650873],
+                {"bubblingMouseEvents": true, "color": "#5089cf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5089cf", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_6033605de370310d50b17c83202b5490.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 크래프톤<br><b>기업명</b>&nbsp;&nbsp; 라이징윙스<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 영동대로82길 7 한석빌딩 (대치동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9abd384a2f01f2433d945c08c518417a = L.circle(
+                [37.5491454, 126.9112084],
+                {"bubblingMouseEvents": true, "color": "#5089cf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5089cf", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_9abd384a2f01f2433d945c08c518417a.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 크래프톤<br><b>기업명</b>&nbsp;&nbsp; 5민랩<br><b>주소</b>&nbsp;&nbsp; 서울 마포구 양화로 19 합정오피스빌딩 8층 (합정동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0f35922f2b5a2c63ea1f79ebe2b52b18 = L.circle(
+                [37.3495549, 127.1082883],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_0f35922f2b5a2c63ea1f79ebe2b52b18.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 분당엠코헤리츠오피스텔<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 성남대로 151 (구미동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_fc29b911df03cc04d6be56e09e695758 = L.circle(
+                [37.5420644, 127.0625701],
+                {"bubblingMouseEvents": true, "color": "#5089cf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5089cf", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_fc29b911df03cc04d6be56e09e695758.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 크래프톤<br><b>기업명</b>&nbsp;&nbsp; 띵스플로우<br><b>주소</b>&nbsp;&nbsp; 서울 성동구 성수이로20길 51 (성수동2가)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9582d709122e70f810c714b6a9d677e2 = L.circle(
+                [37.4007572, 127.1123128],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_9582d709122e70f810c714b6a9d677e2.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 위메이드<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 대왕판교로644번길 49 7층 (삼평동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_87e7f84a63176104b678c18b073d7917 = L.circle(
+                [37.5173705, 127.0406054],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_87e7f84a63176104b678c18b073d7917.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 미투온<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 학동로 343 더피나클강남 6층 (논현동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_98b64bef189416bffe7d242d5dbb371c = L.circle(
+                [37.3942583, 127.112028],
+                {"bubblingMouseEvents": true, "color": "#5089cf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5089cf", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_98b64bef189416bffe7d242d5dbb371c.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 크래프톤<br><b>기업명</b>&nbsp;&nbsp; 블루홀스튜디오<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 분당내곡로 117 (백현동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_dae740b9128e3198da219fa38ec7a288 = L.circle(
+                [37.3975005, 127.1117978],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_dae740b9128e3198da219fa38ec7a288.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 모히또게임즈<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 판교역로192번길 14-1 판교예미지빌딩 10층 (삼평동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b2647162d9ff5d93014653f7ef251ce4 = L.circle(
+                [37.4012653, 127.1032258],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_b2647162d9ff5d93014653f7ef251ce4.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 손노리<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 판교로256번길 19 GB1타워 3층 (삼평동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_cbf16236b364923079eb3218f7362bfa = L.circle(
+                [37.4770612, 126.8821474],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_cbf16236b364923079eb3218f7362bfa.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 컴투스 코퍼레이션<br><b>주소</b>&nbsp;&nbsp; 서울 금천구 가산디지털1로 131 A동 12층 (가산동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_be92572a85f9c3b491061dbd7bd44b02 = L.circle(
+                [37.3830295, 127.1214876],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_be92572a85f9c3b491061dbd7bd44b02.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 슈퍼캣<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 분당로 55 13층 (서현동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4cc6dd2a0e96d6d9fabcdda5fb234eae = L.circle(
+                [37.4002183, 127.104187],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_4cc6dd2a0e96d6d9fabcdda5fb234eae.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 엑스엘게임즈<br><b>주소</b>&nbsp;&nbsp;  경기 성남시 분당구 대왕판교로645번길 14 네오판교타워 7,8층 (삼평동) <br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6b7be9fafdc98bba0218cbc6d022e394 = L.circle(
+                [37.3418132, 127.1021388],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_6b7be9fafdc98bba0218cbc6d022e394.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 포켓몬코리아<br><b>주소</b>&nbsp;&nbsp; 경기 용인시 수지구 신수로 801 1층 (동천동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_66408f505e0576865fa9c50aba23a56d = L.circle(
+                [37.3942639, 127.1103678],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_66408f505e0576865fa9c50aba23a56d.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 카카오게임즈<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 판교역로 152 알파돔타워 14층 (백현동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2a443f90596c72e48f7d8a8eadf169bf = L.circle(
+                [37.4003559, 127.1104765],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_2a443f90596c72e48f7d8a8eadf169bf.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 스마일게이트 홀딩스<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 판교역로 220 (삼평동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_24b99dac85254a52b2295b7f5db1040e = L.circle(
+                [37.4769446, 126.9632354],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_24b99dac85254a52b2295b7f5db1040e.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 어썸피스<br><b>주소</b>&nbsp;&nbsp; 서울 관악구 남부순환로 1926 (봉천동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0f3f0c2367fd60c8d0dd4d5c74d0bfc7 = L.circle(
+                [37.5552042, 126.9333483],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_0f3f0c2367fd60c8d0dd4d5c74d0bfc7.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 반지하게임즈<br><b>주소</b>&nbsp;&nbsp; 서울 마포구 신촌로14길 20 6층 (노고산동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_caa2a573f2219c65e48394453dafd852 = L.circle(
+                [37.4770612, 126.8821474],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_caa2a573f2219c65e48394453dafd852.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 컴투스홀딩스<br><b>주소</b>&nbsp;&nbsp; 서울 금천구 가산디지털1로 131 BYC하이시티 A동 3층 (가산동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_721fcd442d7c1ee09a07d39c7824a09d = L.circle(
+                [37.4024206, 127.1011112],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_721fcd442d7c1ee09a07d39c7824a09d.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 웹젠<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 판교로 242 판교디지털콘텐츠파크 B동 (삼평동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7ff4c61964b932de277993841b0bfad3 = L.circle(
+                [37.4021266, 127.1122853],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_7ff4c61964b932de277993841b0bfad3.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 스마일게이트 엔터테인먼트<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 판교로 344 (삼평동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_627f034b392b7a6e69ae04a5f99317a1 = L.circle(
+                [37.5404721, 126.9463788],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_627f034b392b7a6e69ae04a5f99317a1.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 제페토 본사<br><b>주소</b>&nbsp;&nbsp; 서울 마포구 마포대로 45 일진빌딩 6층 (도화동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b4b9e9c488bd39e23dd0eeaada4d84c6 = L.circle(
+                [37.4798432, 126.8953231],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_b4b9e9c488bd39e23dd0eeaada4d84c6.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 넷마블컴퍼니<br><b>주소</b>&nbsp;&nbsp; 서울 구로구 디지털로26길 38 (구로동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4315dd498e8ee0b6ac22859b7093eda6 = L.circle(
+                [37.399387, 127.1086469],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_4315dd498e8ee0b6ac22859b7093eda6.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 엔씨소프트 R&D센터<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 대왕판교로644번길 12 (삼평동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_27c74539720682bc31c581d544686822 = L.circle(
+                [37.4064431, 126.983647],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_27c74539720682bc31c581d544686822.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 펄어비스<br><b>주소</b>&nbsp;&nbsp; 경기 과천시 과천대로2길 48 (갈현동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d402c7b5bb3d06d2b1f7c3481ea99c17 = L.circle(
+                [37.4798432, 126.8953231],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_d402c7b5bb3d06d2b1f7c3481ea99c17.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 넷마블<br><b>주소</b>&nbsp;&nbsp; 서울 구로구 디지털로26길 38 (구로동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2380feb532c386d6b6511a2999694588 = L.circle(
+                [37.5054253, 127.0577239],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_2380feb532c386d6b6511a2999694588.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 유비소프트엔터테인먼트<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 삼성로 432 3층 (대치동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1baa4078104b822a8bedaf21f4a79168 = L.circle(
+                [37.4998772, 127.0323811],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_1baa4078104b822a8bedaf21f4a79168.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 일렉트로닉아츠코리아<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 테헤란로 129 강남N타워 15~18층 (역삼동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_567db1039ea5a24623eadc7fad542e15 = L.circle(
+                [37.507282, 127.0555402],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_567db1039ea5a24623eadc7fad542e15.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 라이언게임즈<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 테헤란로79길 6 (삼성동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0717d5fba4a69e25f8285ac9426de51e = L.circle(
+                [37.4992124, 127.0359295],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_0717d5fba4a69e25f8285ac9426de51e.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 로블록스코리아<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 테헤란로26길 14 (역삼동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a34f5fd88db29760074cba226568d336 = L.circle(
+                [37.501313, 127.0371805],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_a34f5fd88db29760074cba226568d336.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 네오플 서울지사<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 테헤란로 201 (역삼동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_05941101de0379fcb92f6530c4d1819e = L.circle(
+                [37.5014747, 127.040447],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_05941101de0379fcb92f6530c4d1819e.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 라인게임즈<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 테헤란로 218 에이피타워 2층 (역삼동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_784742a080eb59de8b128b0552a08afb = L.circle(
+                [37.5032494, 127.04151],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_784742a080eb59de8b128b0552a08afb.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 엔픽셀<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 테헤란로 231 센터필드 WEST타워 12~14층 (역삼동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e59827a57d916f02f506e3f6741a7d29 = L.circle(
+                [37.5169668, 127.0385971],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_e59827a57d916f02f506e3f6741a7d29.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 퍼피레드<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 학동로47길 5 1층 (논현동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b8521a4818db59a5af08e0f4fb896b1e = L.circle(
+                [37.5091889, 127.0607757],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_b8521a4818db59a5af08e0f4fb896b1e.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 블리자드엔터테인먼트<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 테헤란로 521 파르나스타워 15층 (삼성동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_cd5ded2a90dc069629af43d5aced8b77 = L.circle(
+                [37.5091889, 127.0607757],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_cd5ded2a90dc069629af43d5aced8b77.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 라이엇게임즈코리아<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 테헤란로 521 파르나스타워 30층 (삼성동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7849189b74aa227e53bdb8bd41787d86 = L.circle(
+                [37.5084032, 127.0571548],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_7849189b74aa227e53bdb8bd41787d86.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 베스파<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 테헤란로83길 15 제이엠빌딩 9층 (삼성동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3d744aa02d4a69792746cab4a8440bca = L.circle(
+                [37.5268064, 127.0330969],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_3d744aa02d4a69792746cab4a8440bca.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 에픽게임즈코리아<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 언주로 855 (신사동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_21f72c086af3610e27a1d5e787f3278b = L.circle(
+                [37.5607868, 126.9715031],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_21f72c086af3610e27a1d5e787f3278b.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 한국닌텐도<br><b>주소</b>&nbsp;&nbsp; 서울 중구 통일로2길 16 AIA타워 2층 (순화동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_48811cbc9b15e627161cc23b754ec567 = L.circle(
+                [37.5230947, 127.0375908],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_48811cbc9b15e627161cc23b754ec567.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 데브시스터즈<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 도산대로 327 (신사동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8c3cb9b9b0d66ab1d39b4f7947a0b2a2 = L.circle(
+                [37.4008762, 127.1041905],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_8c3cb9b9b0d66ab1d39b4f7947a0b2a2.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; NHN<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 대왕판교로645번길 16 플레이뮤지엄 (삼평동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_96cd855cb86c909256c3c6e1abebf83c = L.circle(
+                [37.4002183, 127.104187],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_96cd855cb86c909256c3c6e1abebf83c.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 네오위즈<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 대왕판교로645번길 14 (삼평동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f4457d630df244f6c8cfdc36e6b389d3 = L.circle(
+                [37.400409, 127.1031908],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_f4457d630df244f6c8cfdc36e6b389d3.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 넥슨게임즈 판교<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 판교로256번길 25 (삼평동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f5b9bf4dc4eee25c7a8f40499f585da4 = L.circle(
+                [37.4019973, 127.1034995],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_f5b9bf4dc4eee25c7a8f40499f585da4.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 넥슨코리아<br><b>주소</b>&nbsp;&nbsp; 경기 성남시 분당구 판교로256번길 7 (삼평동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_34b9ac3e49546679b9e9849921058b20 = L.circle(
+                [37.4851057, 127.0363935],
+                {"bubblingMouseEvents": true, "color": "#987db7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#987db7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_34b9ac3e49546679b9e9849921058b20.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 게임회사<br><b>기업명</b>&nbsp;&nbsp; 넥슨게임즈 서울<br><b>주소</b>&nbsp;&nbsp; 서울 강남구 남부순환로 2621 디앤오강남빌딩 5층 (도곡동)<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d650f826ed9bf855de9423d4ef6cc702 = L.circle(
+                [37.4902033, 127.0056607],
+                {"bubblingMouseEvents": true, "color": "#5089cf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5089cf", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_d650f826ed9bf855de9423d4ef6cc702.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 크래프톤<br><b>기업명</b>&nbsp;&nbsp; 크래프톤 펍지 스튜디오<br><b>주소</b>&nbsp;&nbsp; 서울 서초구 서초대로38길 12 마제스타시티 타워1<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_66ed960ceb475f650faf4bb525c07928 = L.circle(
+                [37.49208, 127.0298129],
+                {"bubblingMouseEvents": true, "color": "#5089cf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5089cf", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_66ed960ceb475f650faf4bb525c07928.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 크래프톤<br><b>기업명</b>&nbsp;&nbsp; 플라이웨이 게임즈<br><b>주소</b>&nbsp;&nbsp;  서울시 서초구 강남대로 327, 18층(서초동, 대륭서초타워) <br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_78a606729b690fbe408e51cf639e557b = L.circle(
+                [37.3495549, 127.1082883],
+                {"bubblingMouseEvents": true, "color": "#5089cf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5089cf", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_715bcb9bdd2735f737f31bdef044fa8a);
+        
+    
+            circle_78a606729b690fbe408e51cf639e557b.bindTooltip(
+                `<div>
+                     <b>구분</b>&nbsp;&nbsp; 크래프톤<br><b>기업명</b>&nbsp;&nbsp; 렐루게임즈<br><b>주소</b>&nbsp;&nbsp;  경기도 성남시 분당구 성남대로 151, 2층 225호, 226호 <br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
