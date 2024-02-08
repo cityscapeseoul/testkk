@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ec743acaf742faf0306440dfb1ac0320 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ec743acaf742faf0306440dfb1ac0320" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ec743acaf742faf0306440dfb1ac0320 = L.map(
+                "map_ec743acaf742faf0306440dfb1ac0320",
+                {
+                    center: [37.5430332, 31.0509169],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7bf35905b96c5e02306f54eec918e98d = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var marker_43f5ba1288daa7f145db21e476e77f13 = L.marker(
+                [37.5032494, 127.04151],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_5630ca04fbe677c0d60ea489426fe760 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_43f5ba1288daa7f145db21e476e77f13.setIcon(icon_5630ca04fbe677c0d60ea489426fe760);
+        
+    
+        var popup_a0bae9f39273d160eb98d98dafdd8987 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_fefe325f78e566d775692cbb70d6ff01 = $(`<div id="html_fefe325f78e566d775692cbb70d6ff01" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">(주)크래프톤</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">-</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">-</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">서울 강남구 테헤란로 231 이스트타워 (역삼동)</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_a0bae9f39273d160eb98d98dafdd8987.setContent(html_fefe325f78e566d775692cbb70d6ff01);
+            
+        
+
+        marker_43f5ba1288daa7f145db21e476e77f13.bindPopup(popup_a0bae9f39273d160eb98d98dafdd8987)
+        ;
+
+        
+    
+    
+            var marker_8e453ebdbe8d78e47e3bc94cff2ec1e0 = L.marker(
+                [37.4902033, 127.0056607],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_058ae0e861805eeff1929dcd8445fdc0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_8e453ebdbe8d78e47e3bc94cff2ec1e0.setIcon(icon_058ae0e861805eeff1929dcd8445fdc0);
+        
+    
+        var popup_bd4e64973849a886c94e1e38483de06c = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_5680af2920dc1b7877871708d4d511c8 = $(`<div id="html_5680af2920dc1b7877871708d4d511c8" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">크래프톤 펍지 스튜디오</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">-</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">-</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">서울 서초구 서초대로38길 12 마제스타시티 타워1</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_bd4e64973849a886c94e1e38483de06c.setContent(html_5680af2920dc1b7877871708d4d511c8);
+            
+        
+
+        marker_8e453ebdbe8d78e47e3bc94cff2ec1e0.bindPopup(popup_bd4e64973849a886c94e1e38483de06c)
+        ;
+
+        
+    
+    
+            var marker_baaf7b9af3ce036d2d1f7806f6eafdef = L.marker(
+                [37.5072048, 127.0650873],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_f7db4e9c5572eba11bdd4708c4b0e621 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_baaf7b9af3ce036d2d1f7806f6eafdef.setIcon(icon_f7db4e9c5572eba11bdd4708c4b0e621);
+        
+    
+        var popup_ca54fa104a4a7a3b7d92771190ae1ae6 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_6bdd3fecd95bba1f0bf0b1839db616d0 = $(`<div id="html_6bdd3fecd95bba1f0bf0b1839db616d0" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">라이징윙스㈜</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">모바일게임, 어플리케이션 개발 및 판매</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2012</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">서울시 강남구 영동대로82길 7(대치동, 한석빌딩)</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_ca54fa104a4a7a3b7d92771190ae1ae6.setContent(html_6bdd3fecd95bba1f0bf0b1839db616d0);
+            
+        
+
+        marker_baaf7b9af3ce036d2d1f7806f6eafdef.bindPopup(popup_ca54fa104a4a7a3b7d92771190ae1ae6)
+        ;
+
+        
+    
+    
+            var marker_fc646c04e39d0bec9315a59ad91faa94 = L.marker(
+                [37.3942583, 127.112028],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_57578c8e8e283df75edd1d0a2edfd188 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_fc646c04e39d0bec9315a59ad91faa94.setIcon(icon_57578c8e8e283df75edd1d0a2edfd188);
+        
+    
+        var popup_0b1c0cdd3c314244b13ffc66bb3a5b3f = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_85adbd65ccc845ea494985abdf7a8702 = $(`<div id="html_85adbd65ccc845ea494985abdf7a8702" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">㈜블루홀스튜디오</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">소프트웨어 개발 및 공급</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2020</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">경기도 성남시 분당내곡로 117(백현동, 그레이츠 판교)</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_0b1c0cdd3c314244b13ffc66bb3a5b3f.setContent(html_85adbd65ccc845ea494985abdf7a8702);
+            
+        
+
+        marker_fc646c04e39d0bec9315a59ad91faa94.bindPopup(popup_0b1c0cdd3c314244b13ffc66bb3a5b3f)
+        ;
+
+        
+    
+    
+            var marker_98c282749ff02d26c2eee4c52a73ffc9 = L.marker(
+                [37.3867276, 127.1219752],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_9cf4094b59d3fdfc19dda33dc1b0b06b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_98c282749ff02d26c2eee4c52a73ffc9.setIcon(icon_9cf4094b59d3fdfc19dda33dc1b0b06b);
+        
+    
+        var popup_abeca1170596799232a46328ed7d85be = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_338dc95c4c82b58169434a39bfb7c230 = $(`<div id="html_338dc95c4c82b58169434a39bfb7c230" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">㈜드림모션</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">소프트웨어 개발 및 공급</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2016</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">경기도 성남시 분당구 황새울로335번길 10, 4층 401호(서현동, 멜로즈프라자)</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_abeca1170596799232a46328ed7d85be.setContent(html_338dc95c4c82b58169434a39bfb7c230);
+            
+        
+
+        marker_98c282749ff02d26c2eee4c52a73ffc9.bindPopup(popup_abeca1170596799232a46328ed7d85be)
+        ;
+
+        
+    
+    
+            var marker_52ab67eb5f4e03a4457ecd5e2467405a = L.marker(
+                [37.5420644, 127.0625701],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_e4558a432921b8c82b3e8d1172c2b2b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_52ab67eb5f4e03a4457ecd5e2467405a.setIcon(icon_e4558a432921b8c82b3e8d1172c2b2b1);
+        
+    
+        var popup_d2a168ec68b1806be563fe4a58c6ae69 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_05c9e795ab52061a7e20c37d2b0a745e = $(`<div id="html_05c9e795ab52061a7e20c37d2b0a745e" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">㈜띵스플로우</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">소프트웨어 개발 및 공급</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2017</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">서울시 성동구 성수이로20길 51, 2층(성수동2가, 대륭빌딩)</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_d2a168ec68b1806be563fe4a58c6ae69.setContent(html_05c9e795ab52061a7e20c37d2b0a745e);
+            
+        
+
+        marker_52ab67eb5f4e03a4457ecd5e2467405a.bindPopup(popup_d2a168ec68b1806be563fe4a58c6ae69)
+        ;
+
+        
+    
+    
+            var marker_0fb7679919ceb7d5c7f08585927746bc = L.marker(
+                [37.5420644, 127.0625701],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_dafdc925e2169e446f024129f9f8a28b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_0fb7679919ceb7d5c7f08585927746bc.setIcon(icon_dafdc925e2169e446f024129f9f8a28b);
+        
+    
+        var popup_18fc750131ed7c9db0c616dcac06ef32 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_56c4d7749cdd64469ec202fbbdebdb83 = $(`<div id="html_56c4d7749cdd64469ec202fbbdebdb83" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">㈜팁토우게임즈</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">소프트웨어 개발 및 판매업</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2021</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">서울시 서초구 서초대로38길 12, 9층(서초동, 마제스타시티)</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_18fc750131ed7c9db0c616dcac06ef32.setContent(html_56c4d7749cdd64469ec202fbbdebdb83);
+            
+        
+
+        marker_0fb7679919ceb7d5c7f08585927746bc.bindPopup(popup_18fc750131ed7c9db0c616dcac06ef32)
+        ;
+
+        
+    
+    
+            var marker_2d97a19d8937315bfddcb7fa70506691 = L.marker(
+                [37.5491454, 126.9112084],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_5962bf6436cd586cb74a52c0fe4fe177 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_2d97a19d8937315bfddcb7fa70506691.setIcon(icon_5962bf6436cd586cb74a52c0fe4fe177);
+        
+    
+        var popup_b363155daa06cbd2fce88255bb6a43bd = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_bfb536fa5791841f86fce1e4d02d11ea = $(`<div id="html_bfb536fa5791841f86fce1e4d02d11ea" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">㈜5민랩</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">게임소프트웨어 개발 및 공급업</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2013</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">서울시 마포구 양화로 19, 1호, 8층(합정동, 합정오피스빌딩)</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_b363155daa06cbd2fce88255bb6a43bd.setContent(html_bfb536fa5791841f86fce1e4d02d11ea);
+            
+        
+
+        marker_2d97a19d8937315bfddcb7fa70506691.bindPopup(popup_b363155daa06cbd2fce88255bb6a43bd)
+        ;
+
+        
+    
+    
+            var marker_35f67b3811bf86b236b833da362401f1 = L.marker(
+                [37.3495549, 127.1082883],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_eb3ccfab00f7534461fc195c02cdb7f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_35f67b3811bf86b236b833da362401f1.setIcon(icon_eb3ccfab00f7534461fc195c02cdb7f5);
+        
+    
+        var popup_23cbb2f3a1d865e40ff7a3243d4db0e6 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_7b3eb73d0fe4ed33fa0ec214747b3946 = $(`<div id="html_7b3eb73d0fe4ed33fa0ec214747b3946" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">㈜렐루게임즈</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">소프트웨어 개발 및 공급</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2023</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">경기도 성남시 분당구 성남대로 151, 2층 225호, 226호(구미동, 분당엠코헤리츠)</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_23cbb2f3a1d865e40ff7a3243d4db0e6.setContent(html_7b3eb73d0fe4ed33fa0ec214747b3946);
+            
+        
+
+        marker_35f67b3811bf86b236b833da362401f1.bindPopup(popup_23cbb2f3a1d865e40ff7a3243d4db0e6)
+        ;
+
+        
+    
+    
+            var marker_63cad81105ef888cc4c0f501d4c1f494 = L.marker(
+                [37.49208, 127.0298129],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_356ee10a5e5bb0fdd2ecfa3c2b9a9bd5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_63cad81105ef888cc4c0f501d4c1f494.setIcon(icon_356ee10a5e5bb0fdd2ecfa3c2b9a9bd5);
+        
+    
+        var popup_3e014cc96067c3c3360dc65e6d31e6dc = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_9a247b86948d9f8dbf2e982def4a3a48 = $(`<div id="html_9a247b86948d9f8dbf2e982def4a3a48" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">㈜플라이웨이게임즈</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">소프트웨어 개발 및 공급업</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2023</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">서울시 서초구 강남대로 327, 18층(서초동, 대륭서초타워)</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_3e014cc96067c3c3360dc65e6d31e6dc.setContent(html_9a247b86948d9f8dbf2e982def4a3a48);
+            
+        
+
+        marker_63cad81105ef888cc4c0f501d4c1f494.bindPopup(popup_3e014cc96067c3c3360dc65e6d31e6dc)
+        ;
+
+        
+    
+    
+            var marker_5cdfe66c81c3276eb001718a8371e533 = L.marker(
+                [47.6151, -122.19579],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_2981fd3db97a079d3f68575607a19fc6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_5cdfe66c81c3276eb001718a8371e533.setIcon(icon_2981fd3db97a079d3f68575607a19fc6);
+        
+    
+        var popup_d765b1a3ba5a42a05e04f4fee13d7379 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_e2262b706df0dc955c5c161661b75227 = $(`<div id="html_e2262b706df0dc955c5c161661b75227" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">En Masse Entertainment, Inc.</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">게임 소프트웨어 공급</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2010</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">500 108th Ave NE Suite 1100, Bellevue, WA 98004, USA</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_d765b1a3ba5a42a05e04f4fee13d7379.setContent(html_e2262b706df0dc955c5c161661b75227);
+            
+        
+
+        marker_5cdfe66c81c3276eb001718a8371e533.bindPopup(popup_d765b1a3ba5a42a05e04f4fee13d7379)
+        ;
+
+        
+    
+    
+            var marker_e77c7e13028c42dbf56a8a0c7432b161 = L.marker(
+                [34.02819131, -118.4727727],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_32b6ee50b9782734f52868a262815203 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_e77c7e13028c42dbf56a8a0c7432b161.setIcon(icon_32b6ee50b9782734f52868a262815203);
+        
+    
+        var popup_2ac1f29ab72ebde4c09039a8368d02b4 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_d204cae14de6f3d63117b4d39c0ba186 = $(`<div id="html_d204cae14de6f3d63117b4d39c0ba186" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">Krafton Americas, Inc.</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">게임 소프트웨어 개발 및 공급</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2017</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">1601 Cloverfield Blvd, Suite 5000N, Santa Monica, CA, 90404, USA</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_2ac1f29ab72ebde4c09039a8368d02b4.setContent(html_d204cae14de6f3d63117b4d39c0ba186);
+            
+        
+
+        marker_e77c7e13028c42dbf56a8a0c7432b161.bindPopup(popup_2ac1f29ab72ebde4c09039a8368d02b4)
+        ;
+
+        
+    
+    
+            var marker_1a50adb073fbedfd0c47946d6e31d4d5 = L.marker(
+                [52.30710985, 4.942841583],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_b1c6144fc4f6cebc840be2415fc06f50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_1a50adb073fbedfd0c47946d6e31d4d5.setIcon(icon_b1c6144fc4f6cebc840be2415fc06f50);
+        
+    
+        var popup_68a3f725f4cc0211577907e68679ff43 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_ce45a660f1d7292fe9127a3b27683b6b = $(`<div id="html_ce45a660f1d7292fe9127a3b27683b6b" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">KRAFTON EUROPE B.V.</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">게임 소프트웨어 개발 및 공급</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2017</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">Herikerbergweg 181, 1101 CN Amsterdam, The Netherlands</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_68a3f725f4cc0211577907e68679ff43.setContent(html_ce45a660f1d7292fe9127a3b27683b6b);
+            
+        
+
+        marker_1a50adb073fbedfd0c47946d6e31d4d5.bindPopup(popup_68a3f725f4cc0211577907e68679ff43)
+        ;
+
+        
+    
+    
+            var marker_527b2c92c3399f53eba8e6bd42ce82f3 = L.marker(
+                [31.24868883, 121.4979136],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_67a5b60763eb4519406a75db2a03f30e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_527b2c92c3399f53eba8e6bd42ce82f3.setIcon(icon_67a5b60763eb4519406a75db2a03f30e);
+        
+    
+        var popup_e4c87ba1819175ab5634d1aeb163fac1 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_143eefc5f0c951a3dc00930ddc9f2dd9 = $(`<div id="html_143eefc5f0c951a3dc00930ddc9f2dd9" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">KRAFTON CHINA</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">게임 개발 및 공급</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2018</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">53F, Sinar Mas Plaza No 501 East Dong Daming Rd., Hongkou District. Shanghai, China</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_e4c87ba1819175ab5634d1aeb163fac1.setContent(html_143eefc5f0c951a3dc00930ddc9f2dd9);
+            
+        
+
+        marker_527b2c92c3399f53eba8e6bd42ce82f3.bindPopup(popup_e4c87ba1819175ab5634d1aeb163fac1)
+        ;
+
+        
+    
+    
+            var marker_2afdd8a69f641ead5c91b32f2dd89be9 = L.marker(
+                [43.07309108, -89.38385417],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_087122653ae28f9a49c5ef85586302d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_2afdd8a69f641ead5c91b32f2dd89be9.setIcon(icon_087122653ae28f9a49c5ef85586302d3);
+        
+    
+        var popup_ea7c8b30ed06c14a411cec772c1ec823 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_f792d40e7f3a0eb569eff040705a0692 = $(`<div id="html_f792d40e7f3a0eb569eff040705a0692" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">PUBG MadGlory, LLC</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">소프트웨어 개발 및 공급</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2012</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">25 W. Main Street Madison WI, USA</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_ea7c8b30ed06c14a411cec772c1ec823.setContent(html_f792d40e7f3a0eb569eff040705a0692);
+            
+        
+
+        marker_2afdd8a69f641ead5c91b32f2dd89be9.bindPopup(popup_ea7c8b30ed06c14a411cec772c1ec823)
+        ;
+
+        
+    
+    
+            var marker_f71e959c5b8f27fa2528856686036fc7 = L.marker(
+                [1.300217041, 103.8373201],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_54dc26058abfb76afa5097a34a007c3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_f71e959c5b8f27fa2528856686036fc7.setIcon(icon_54dc26058abfb76afa5097a34a007c3e);
+        
+    
+        var popup_5c346f8626b9601a516998b51011e14d = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_418c32b0c93df3a63864b53e02ba0ae5 = $(`<div id="html_418c32b0c93df3a63864b53e02ba0ae5" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">KP PTE. LTD.</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">컨설팅 자문 및 투자</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2019</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">111 Somerset Road 06-07 111 Somerset 238164, Singapore</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_5c346f8626b9601a516998b51011e14d.setContent(html_418c32b0c93df3a63864b53e02ba0ae5);
+            
+        
+
+        marker_f71e959c5b8f27fa2528856686036fc7.bindPopup(popup_5c346f8626b9601a516998b51011e14d)
+        ;
+
+        
+    
+    
+            var marker_aafe3a16e154a87b6c360e28c56e8903 = L.marker(
+                [37.75905603, -121.9552426],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_5da230672d41cf41f5ec38914659c700 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_aafe3a16e154a87b6c360e28c56e8903.setIcon(icon_5da230672d41cf41f5ec38914659c700);
+        
+    
+        var popup_d25c751b96e5e727c159af66a18e9695 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_f3ef86d79d38c9982dcfca54c0d3aab3 = $(`<div id="html_f3ef86d79d38c9982dcfca54c0d3aab3" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">Striking Distance Studios, Inc.</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">소프트웨어 개발</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2019</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">6111 Bollinger Canyon Road, Suite 150, San Ramon, CA, 94583, USA</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_d25c751b96e5e727c159af66a18e9695.setContent(html_f3ef86d79d38c9982dcfca54c0d3aab3);
+            
+        
+
+        marker_aafe3a16e154a87b6c360e28c56e8903.bindPopup(popup_d25c751b96e5e727c159af66a18e9695)
+        ;
+
+        
+    
+    
+            var marker_3a5be2eaa4931c35ab8bae26344ee632 = L.marker(
+                [35.658767, 139.7052646],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_c8e8459b4fdf94343628476504f3f981 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_3a5be2eaa4931c35ab8bae26344ee632.setIcon(icon_c8e8459b4fdf94343628476504f3f981);
+        
+    
+        var popup_1d05f927a103d5006f09ed23a45e75b4 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_b017e16afc387a348b1215115e6cd9dc = $(`<div id="html_b017e16afc387a348b1215115e6cd9dc" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">KRAFTON JAPAN, Inc.</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">게임 개발 및 서비스</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2019</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">8F, Bizcore Shibuya, 1-3-15, Shibuya, Shibuya-ku, Tokyo, JAPAN</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_1d05f927a103d5006f09ed23a45e75b4.setContent(html_b017e16afc387a348b1215115e6cd9dc);
+            
+        
+
+        marker_3a5be2eaa4931c35ab8bae26344ee632.bindPopup(popup_1d05f927a103d5006f09ed23a45e75b4)
+        ;
+
+        
+    
+    
+            var marker_e5cd5beebffcabbf6eba04095ced700c = L.marker(
+                [37.75905603, -121.9552426],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_688f9b9a05c8a172f21cd1f93c4875bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_e5cd5beebffcabbf6eba04095ced700c.setIcon(icon_688f9b9a05c8a172f21cd1f93c4875bf);
+        
+    
+        var popup_cfbb6ddfe805640aaf5fb79bb51d6fbd = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_79bf5d8cc8b147dfd64ea1d75d833932 = $(`<div id="html_79bf5d8cc8b147dfd64ea1d75d833932" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">PUBG Entertainment, Inc.</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">영상물 제작업</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2020</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">6111 Bollinger Canyon Road, Suite 150, San Ramon, CA, 94583, USA</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_cfbb6ddfe805640aaf5fb79bb51d6fbd.setContent(html_79bf5d8cc8b147dfd64ea1d75d833932);
+            
+        
+
+        marker_e5cd5beebffcabbf6eba04095ced700c.bindPopup(popup_cfbb6ddfe805640aaf5fb79bb51d6fbd)
+        ;
+
+        
+    
+    
+            var marker_3326813c460f7730e09baf13fee8358c = L.marker(
+                [41.65196549, -0.881686403],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_05c175134a9a30b57656fb43ee46746e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_3326813c460f7730e09baf13fee8358c.setIcon(icon_05c175134a9a30b57656fb43ee46746e);
+        
+    
+        var popup_80430b2e14b175ce74becefd130989d7 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_92a9f2101e8fb3e819f90d48f5675d39 = $(`<div id="html_92a9f2101e8fb3e819f90d48f5675d39" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">Striking Distance Studios Spain, S.L.</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">게임 소프트웨어 개발</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2020</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">Plaza Espana 3, 4º, 1, CP 50004, Zaragoza, Spain</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_80430b2e14b175ce74becefd130989d7.setContent(html_92a9f2101e8fb3e819f90d48f5675d39);
+            
+        
+
+        marker_3326813c460f7730e09baf13fee8358c.bindPopup(popup_80430b2e14b175ce74becefd130989d7)
+        ;
+
+        
+    
+    
+            var marker_f24c445ee4e5410c07a2a0c13e2bc730 = L.marker(
+                [37.75905603, -121.9552426],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_f9f6d85cfc14004860a1f60233239f64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_f24c445ee4e5410c07a2a0c13e2bc730.setIcon(icon_f9f6d85cfc14004860a1f60233239f64);
+        
+    
+        var popup_d26e5bd9ebcd4615264d0107af809cce = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_1e3e63401da776aa4b495ad19e4b890d = $(`<div id="html_1e3e63401da776aa4b495ad19e4b890d" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">KRAFTON Ventures, Inc.</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">투자</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2020</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">6111 Bollinger Canyon Road, Suite 150, San Ramon, CA, 94583, USA</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_d26e5bd9ebcd4615264d0107af809cce.setContent(html_1e3e63401da776aa4b495ad19e4b890d);
+            
+        
+
+        marker_f24c445ee4e5410c07a2a0c13e2bc730.bindPopup(popup_d26e5bd9ebcd4615264d0107af809cce)
+        ;
+
+        
+    
+    
+            var marker_359f8ec54be9f0085d78e6792cce7c2a = L.marker(
+                [37.75905603, -121.9552426],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_4d5dd53948c3146bd9804a4d551645cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_359f8ec54be9f0085d78e6792cce7c2a.setIcon(icon_4d5dd53948c3146bd9804a4d551645cf);
+        
+    
+        var popup_d15fe465ba24e9976e2532b29828e5c5 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_27f526bdcd3ff660d0bec795226a096a = $(`<div id="html_27f526bdcd3ff660d0bec795226a096a" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">Krafton Ventures, L.L.C.</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">투자</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2020</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">6111 Bollinger Canyon Road, Suite 150, San Ramon, CA, 94583, USA</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_d15fe465ba24e9976e2532b29828e5c5.setContent(html_27f526bdcd3ff660d0bec795226a096a);
+            
+        
+
+        marker_359f8ec54be9f0085d78e6792cce7c2a.bindPopup(popup_d15fe465ba24e9976e2532b29828e5c5)
+        ;
+
+        
+    
+    
+            var marker_cd2d0088a6c909a89f194029833a22c9 = L.marker(
+                [37.75905603, -121.9552426],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_f481526c4b795e4727a4638d98be1a76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_cd2d0088a6c909a89f194029833a22c9.setIcon(icon_f481526c4b795e4727a4638d98be1a76);
+        
+    
+        var popup_9025435eb3afa170aeb79d867f001696 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_c84be9e879d34915f718695f9471817a = $(`<div id="html_c84be9e879d34915f718695f9471817a" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">Krafton Ventures Fund, L.P.</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">투자</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2020</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">6111 Bollinger Canyon Road, Suite 150, San Ramon, CA, 94583, USA</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_9025435eb3afa170aeb79d867f001696.setContent(html_c84be9e879d34915f718695f9471817a);
+            
+        
+
+        marker_cd2d0088a6c909a89f194029833a22c9.bindPopup(popup_9025435eb3afa170aeb79d867f001696)
+        ;
+
+        
+    
+    
+            var marker_e4e95927e7a396d142d9b25e1b4181ca = L.marker(
+                [30.26826254, -97.74072314],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_16233085936a888dad2c821aa1f15299 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_e4e95927e7a396d142d9b25e1b4181ca.setIcon(icon_16233085936a888dad2c821aa1f15299);
+        
+    
+        var popup_061e0bf91965c15673344ac5cc4ef441 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_8b1f5433d885efc44b0d5bd73b82015b = $(`<div id="html_8b1f5433d885efc44b0d5bd73b82015b" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">En Masse Entertainment Texas, Inc.</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">게임 소프트웨어 개발</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2012</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">211 East 7th Street Suite 620 Austin, TX 78701-3218, USA</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_061e0bf91965c15673344ac5cc4ef441.setContent(html_8b1f5433d885efc44b0d5bd73b82015b);
+            
+        
+
+        marker_e4e95927e7a396d142d9b25e1b4181ca.bindPopup(popup_061e0bf91965c15673344ac5cc4ef441)
+        ;
+
+        
+    
+    
+            var marker_2d5ffca4fc4eca5a365bb4864f4f73af = L.marker(
+                [12.96774724, 77.59080373],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_68de20d8459d120f5d7043957a7a90c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_2d5ffca4fc4eca5a365bb4864f4f73af.setIcon(icon_68de20d8459d120f5d7043957a7a90c2);
+        
+    
+        var popup_18a09f65ba5ca294e2467591368f2205 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_fd905810cd11c618a7f42e6861026e75 = $(`<div id="html_fd905810cd11c618a7f42e6861026e75" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">KRAFTON INDIA PRIVATE LIMITED</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">게임 소프트웨어 개발 및 공급</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2020</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">20, Sampangi Tank Road, Raja Ram Mohan Roy Rd, Ashwath Nagar, Sampangi Rama Nagara, Sampangi Rama Nagar, Bengaluru, Karnataka 560027 인도</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_18a09f65ba5ca294e2467591368f2205.setContent(html_fd905810cd11c618a7f42e6861026e75);
+            
+        
+
+        marker_2d5ffca4fc4eca5a365bb4864f4f73af.bindPopup(popup_18a09f65ba5ca294e2467591368f2205)
+        ;
+
+        
+    
+    
+            var marker_e48a2e64b80274ec39be464b231e48d3 = L.marker(
+                [49.28522683, -123.1192165],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_d7697bb482d7e360bcc3092c934b258b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_e48a2e64b80274ec39be464b231e48d3.setIcon(icon_d7697bb482d7e360bcc3092c934b258b);
+        
+    
+        var popup_3d09cdde58822e3c63200a7947d1709c = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_bca0015217128de4f0a33dfe86ca677b = $(`<div id="html_bca0015217128de4f0a33dfe86ca677b" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">SDS Interactive Canada Inc.</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">게임 소프트웨어 개발</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2021</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">Suite 2500, 666 Burrard Street, Vancouver Bc V6C 2X8, Canada</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_3d09cdde58822e3c63200a7947d1709c.setContent(html_bca0015217128de4f0a33dfe86ca677b);
+            
+        
+
+        marker_e48a2e64b80274ec39be464b231e48d3.bindPopup(popup_3d09cdde58822e3c63200a7947d1709c)
+        ;
+
+        
+    
+    
+            var marker_f14fc03c744dabad3f90957bc0e2bdc9 = L.marker(
+                [35.67165926, 139.6833419],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_616f84c3f4ad55ba41c3df9a22a5ab8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_f14fc03c744dabad3f90957bc0e2bdc9.setIcon(icon_616f84c3f4ad55ba41c3df9a22a5ab8a);
+        
+    
+        var popup_3972b9e778f08b14270c54fc1e3ae452 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_2fce879a14bc02250950c51d925743da = $(`<div id="html_2fce879a14bc02250950c51d925743da" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">Thingsflow Inc.</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">모바일 어플리케이션 개발 및 판매</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2021</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">14-27 Motoyoyogimachi, Shibuyaku, Tokyo, Japan</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_3972b9e778f08b14270c54fc1e3ae452.setContent(html_2fce879a14bc02250950c51d925743da);
+            
+        
+
+        marker_f14fc03c744dabad3f90957bc0e2bdc9.bindPopup(popup_3972b9e778f08b14270c54fc1e3ae452)
+        ;
+
+        
+    
+    
+            var marker_9af134fe6ceef5766fba588219033279 = L.marker(
+                [39.74843007, -75.5477307],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_1b31c5c0927d069196470cb52b5e5c3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_9af134fe6ceef5766fba588219033279.setIcon(icon_1b31c5c0927d069196470cb52b5e5c3d);
+        
+    
+        var popup_71dbe22d4d822ff7340db5075b802c3b = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_81032ff5edd31008c8e2d57c753f5490 = $(`<div id="html_81032ff5edd31008c8e2d57c753f5490" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">Krafton Global GP, LLC</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">기타전문서비스</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2021</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">1209 Orange St, Wilmington, DE 19801, USA</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_71dbe22d4d822ff7340db5075b802c3b.setContent(html_81032ff5edd31008c8e2d57c753f5490);
+            
+        
+
+        marker_9af134fe6ceef5766fba588219033279.bindPopup(popup_71dbe22d4d822ff7340db5075b802c3b)
+        ;
+
+        
+    
+    
+            var marker_4bcb55bac7a6ee9ab5144780d4f79323 = L.marker(
+                [39.74843007, -75.5477307],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_117cc149963b42a8aee56076ae1028d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_4bcb55bac7a6ee9ab5144780d4f79323.setIcon(icon_117cc149963b42a8aee56076ae1028d7);
+        
+    
+        var popup_55032a3025a41f3755d8405d7c4eb5f7 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_ed0c24192663bdedf18b3f7542dba519 = $(`<div id="html_ed0c24192663bdedf18b3f7542dba519" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">Krafton Global, LP</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">기타전문서비스</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2021</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">1209 Orange St, Wilmington, DE 19801, USA</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_55032a3025a41f3755d8405d7c4eb5f7.setContent(html_ed0c24192663bdedf18b3f7542dba519);
+            
+        
+
+        marker_4bcb55bac7a6ee9ab5144780d4f79323.bindPopup(popup_55032a3025a41f3755d8405d7c4eb5f7)
+        ;
+
+        
+    
+    
+            var marker_8678e10a5468d28f17972e022b5aa830 = L.marker(
+                [38.31529517, -122.4803767],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_41b85cba17d0b8decb5f616c17a7259b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_8678e10a5468d28f17972e022b5aa830.setIcon(icon_41b85cba17d0b8decb5f616c17a7259b);
+        
+    
+        var popup_c5e0a1ff031451ccc107a69da3aa4297 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_3c6e63b0d2a624ae3f5d01177d4f5ab8 = $(`<div id="html_3c6e63b0d2a624ae3f5d01177d4f5ab8" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">Unknown Worlds Entertainment, Inc.</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">게임 소프트웨어 개발</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2003</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">171 Central Ave Sonoma, CA 95476, USA</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_c5e0a1ff031451ccc107a69da3aa4297.setContent(html_3c6e63b0d2a624ae3f5d01177d4f5ab8);
+            
+        
+
+        marker_8678e10a5468d28f17972e022b5aa830.bindPopup(popup_c5e0a1ff031451ccc107a69da3aa4297)
+        ;
+
+        
+    
+    
+            var marker_1c5890f7d2bf923dfb5cb080be03abed = L.marker(
+                [59.85992726, 17.63573213],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_cea1aee863e9b69102a45df70cff29fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_1c5890f7d2bf923dfb5cb080be03abed.setIcon(icon_cea1aee863e9b69102a45df70cff29fa);
+        
+    
+        var popup_b1ce28b9302055a9a2fb24ef6cd33d31 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_95cc7be72b6743b2d7b375aca5d9bacb = $(`<div id="html_95cc7be72b6743b2d7b375aca5d9bacb" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">Neon Giant AB</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">게임 소프트웨어 개발</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2017</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">Svartbacksgatan 10, 753 20 Uppsala, Sweden</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_b1ce28b9302055a9a2fb24ef6cd33d31.setContent(html_95cc7be72b6743b2d7b375aca5d9bacb);
+            
+        
+
+        marker_1c5890f7d2bf923dfb5cb080be03abed.bindPopup(popup_b1ce28b9302055a9a2fb24ef6cd33d31)
+        ;
+
+        
+    
+    
+            var marker_32cca03ffa0e6a92ff1c9261eebad2d9 = L.marker(
+                [45.49806078, -73.57027432],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_944177e6d23a6329597d21564f6732a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_32cca03ffa0e6a92ff1c9261eebad2d9.setIcon(icon_944177e6d23a6329597d21564f6732a3);
+        
+    
+        var popup_a4414ff5e388515b0d71d9ff9ab30290 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_fc9bcb67e719e0966175352928fe9064 = $(`<div id="html_fc9bcb67e719e0966175352928fe9064" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">KRAFTON MONTREAL STUDIO, INC.</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">게임 소프트웨어 개발</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2022</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2500-1100 boul. Rene-Levesque O Montreal (Quebec) H3B5C9 Canada</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_a4414ff5e388515b0d71d9ff9ab30290.setContent(html_fc9bcb67e719e0966175352928fe9064);
+            
+        
+
+        marker_32cca03ffa0e6a92ff1c9261eebad2d9.bindPopup(popup_a4414ff5e388515b0d71d9ff9ab30290)
+        ;
+
+        
+    
+    
+            var marker_2cba9caaf5407afec06d080e4277b09a = L.marker(
+                [50.08136655, 14.42009056],
+                {}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+    
+            var icon_10d204e27915fd7e7b5c720f32a1f501 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_2cba9caaf5407afec06d080e4277b09a.setIcon(icon_10d204e27915fd7e7b5c720f32a1f501);
+        
+    
+        var popup_db9bb40a8515d5c9059ba9bc77a05acd = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_2160524fc91816cfcf511cd434bd0a74 = $(`<div id="html_2160524fc91816cfcf511cd434bd0a74" style="width: 100.0%; height: 100.0%;"> <!DOCTYPE html> <html> <center> <table style="height: 126px; width: 305px;">  <tbody> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">회사명 </span></center></td> <td style="width: 230px;background-color: #FAFAFA;">VECTOR NORTH s.r.o.</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">사업분야 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">게임 소프트웨어 개발</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">설립연도 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">2023</td> </tr> <tr> <td style="background-color: #C0C1C1;"><center><span style="color: #ffffff;">주소 </span></center></td> <td style="width: 150px;background-color: #FAFAFA;">Purkynova 2121/3, Nove Mesto, 110 00 Praha 1, Czech Republic</td> </tr> </tbody> </table></center> </html>    </div>`)[0];
+                popup_db9bb40a8515d5c9059ba9bc77a05acd.setContent(html_2160524fc91816cfcf511cd434bd0a74);
+            
+        
+
+        marker_2cba9caaf5407afec06d080e4277b09a.bindPopup(popup_db9bb40a8515d5c9059ba9bc77a05acd)
+        ;
+
+        
+    
+    
+            var layer_control_92baa7d1636ec1c70a34a4c779f3884a = {
+                base_layers : {
+                    "\ub2e4\ud06c\ub9f5" : tile_layer_7bf35905b96c5e02306f54eec918e98d,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_92baa7d1636ec1c70a34a4c779f3884a.base_layers,
+                layer_control_92baa7d1636ec1c70a34a4c779f3884a.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_ec743acaf742faf0306440dfb1ac0320);
+        
+</script>
+</html>
